@@ -21,22 +21,6 @@ void PrimeiraPergunta() {
       }
       //desenha os retângulos
       rect(posX, yPos, rectWidth, rectHeight);
-
-      /*if (mousePressed == true) {
-       // Verifica se o clique foi na área do retântela 1
-       if (tela == 1 && mouseX >= 50 && mouseX <= 850 && mouseY >= 245 && mouseY <= 290) {
-       tela = 11;  // Respota certa
-       }
-       if (tela == 1 && mouseX >= 50 && mouseX <= 850 && mouseY >= 325 && mouseY <= 375) {
-       tela = 21;  // Respota errada
-       }
-       if (tela == 1 && mouseX >= 50 && mouseX <= 850 && mouseY >= 410 && mouseY <=460) {
-       tela = 21;  // Respota errada
-       }
-       if (tela == 1 && mouseX >= 50 && mouseX <= 850 && mouseY >= 495 && mouseY <= 545) {
-       tela = 21;  // Respota errada
-       }
-       }*/
     }
     //textos dentro dos retângulos
     fill(60, 50, 255); //cor
