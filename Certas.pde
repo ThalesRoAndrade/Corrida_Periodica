@@ -1,17 +1,17 @@
-void errou1() {
-  background(200, 200, 60);
+void certaResposta1() {
+  background(60, 200, 60);
   //variaveis dos retângulos
-  int posY = height- 150;
-  int posX = width-250;
-  int rectWidth = 300;     // Largura dos retângulos
+  int posY = height- 150;    // Poisção y inicial dos retângulos
+  int posX = width-250;    // Posição x inicial dos retângulos
+  int rectWidth = 400;     // Largura dos retângulos
   int rectHeight = 60;    // Altura dos retângulos
-  int spacing = 35; 
+  int spacing = 35;    // Espaço entre os retângulos
 
-  if (tela == 21) {
+  if (tela == 11) {
     textAlign(CENTER);
     textSize(100);
     fill(255);
-    text("Errooouuuuuu", width/2, 200);
+    text("Certa Respota", width/2, 200);
 
     for (int i = 0; i < 1; i++) {
       int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
@@ -31,20 +31,20 @@ void errou1() {
   }
 }
 
-void errou2() {
-  background(200, 200, 60);
+void certaResposta2() {
+  background(60, 200, 60);
   //variaveis dos retângulos
-  int posY = height- 150;
-  int posX = width-250;
-  int rectWidth = 300;     // Largura dos retângulos
+  int posY = height- 150;    // Poisção y inicial dos retângulos
+  int posX = width-250;    // Posição x inicial dos retângulos
+  int rectWidth = 400;     // Largura dos retângulos
   int rectHeight = 60;    // Altura dos retângulos
-  int spacing = 35; 
+  int spacing = 35;    // Espaço entre os retângulos
 
-  if (tela == 22) {
+  if (tela == 12) {
     textAlign(CENTER);
     textSize(100);
     fill(255);
-    text("Errooouuuuuu", width/2, 200);
+    text("Certa Respota", width/2, 200);
 
     for (int i = 0; i < 1; i++) {
       int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
@@ -64,20 +64,20 @@ void errou2() {
   }
 }
 
-void errou3() {
-  background(200, 200, 60);
+void certaResposta3() {
+  background(60, 200, 60);
   //variaveis dos retângulos
-  int posY = height- 150;
-  int posX = width-250;
-  int rectWidth = 300;     // Largura dos retângulos
+  int posY = height- 150;    // Poisção y inicial dos retângulos
+  int posX = width-250;    // Posição x inicial dos retângulos
+  int rectWidth = 400;     // Largura dos retângulos
   int rectHeight = 60;    // Altura dos retângulos
-  int spacing = 35; 
+  int spacing = 35;    // Espaço entre os retângulos
 
-  if (tela == 23) {
+  if (tela == 13) {
     textAlign(CENTER);
     textSize(100);
     fill(255);
-    text("Errooouuuuuu", width/2, 200);
+    text("Certa Respota", width/2, 200);
 
     for (int i = 0; i < 1; i++) {
       int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
@@ -97,20 +97,20 @@ void errou3() {
   }
 }
 
-void errou4() {
-  background(200, 200, 60);
+void certaResposta4() {
+  background(60, 200, 60);
   //variaveis dos retângulos
-  int posY = height- 150;
-  int posX = width-250;
-  int rectWidth = 300;     // Largura dos retângulos
+  int posY = height- 150;    // Poisção y inicial dos retângulos
+  int posX = width-250;    // Posição x inicial dos retângulos
+  int rectWidth = 400;     // Largura dos retângulos
   int rectHeight = 60;    // Altura dos retângulos
-  int spacing = 35; 
+  int spacing = 35;    // Espaço entre os retângulos
 
-  if (tela == 24) {
+  if (tela == 14) {
     textAlign(CENTER);
     textSize(100);
     fill(255);
-    text("Errooouuuuuu", width/2, 200);
+    text("Certa Respota", width/2, 200);
 
     for (int i = 0; i < 1; i++) {
       int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
