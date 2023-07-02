@@ -1,7 +1,7 @@
 void menu() {
   //variaveis dos retângulos
   int posY = 250;    // Poisção y inicial dos retângulos
-  int posX =350;    // Poisção x inicial dos retângulos
+  int posX = 350;    // Poisção x inicial dos retângulos
   int rectWidth = 300;    // Largura dos retângulos
   int rectHeight = 60;    // Largura dos retângulos
   int spacing = 35;    //Espaço entre os retângulos
@@ -75,7 +75,7 @@ void telas() {
     errou3();
     break;
 
-    //Pergunta 3
+    //Pergunta 4
   case 4:
     QuartaPergunta();
     break;
@@ -84,6 +84,72 @@ void telas() {
     break;
   case 24:
     errou4();
+    break;
+
+    //Pergunta 5
+  case 5:
+    QuintaPergunta();
+    break;
+  case 15:
+    certaResposta5();
+    break;
+  case 25:
+    errou5();
+    break;
+
+    //Pergunta 6
+  case 6:
+    SextaPergunta();
+    break;
+  case 16:
+    certaResposta6();
+    break;
+  case 26:
+    errou6();
+    break;
+
+    //Pergunta 7
+  case 7:
+    SetimaPergunta();
+    break;
+  case 17:
+    certaResposta7();
+    break;
+  case 27:
+    errou7();
+    break;
+
+    //Pergunta 8
+  case 8:
+    OitavaPergunta();
+    break;
+  case 18:
+    certaResposta8();
+    break;
+  case 28:
+    errou8();
+    break;
+
+    //Pergunta 9
+  case 9:
+    NonaPergunta();
+    break;
+  case 19:
+    certaResposta9();
+    break;
+  case 29:
+    errou9();
+    break;
+
+    //Pergunta 10
+  case 10:
+    DecimaPergunta();
+    break;
+  case 20:
+    certaResposta10();
+    break;
+  case 30:
+    errou10();
     break;
   default:
     break;
