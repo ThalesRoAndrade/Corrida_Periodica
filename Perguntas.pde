@@ -21,6 +21,7 @@ void PrimeiraPergunta() {
       }
       //desenha os retângulos
       rect(posX, yPos, rectWidth, rectHeight);
+
     }
     //textos dentro dos retângulos
     fill(60, 50, 255); //cor
