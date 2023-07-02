@@ -16,16 +16,5 @@ void draw() {
     text("Corrida Periodica", width/2, 150);
     menu();
   }
-  if (tela == 1) {
-    PrimeiraPergunta();
-  }
-  if (tela == 2) {
-    SegundaPergunta();
-  }
-  if (tela == 11) {
-    certaResposta();
-  } 
-  if (tela == 21) {
-    errou();
-  }
+  telas();
 }
