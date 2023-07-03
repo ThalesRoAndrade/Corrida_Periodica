@@ -310,4 +310,3 @@ void errou10() {
     text("Próxima", width-120, height - 75);
   }
 }
-
