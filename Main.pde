@@ -1,7 +1,3 @@
-int tela = 0;
-int mouseXPos;
-int resposta = 0;
-
 void setup() {
   size(1000, 600);
   noStroke();
@@ -15,8 +11,14 @@ void draw() {
     textSize(60);
     fill(255);
     text("Corrida Periodica", width/2, 150);
-    text(resposta, width/2, 50);
     menu();
   }
   telas();
+}
+
+void mouseMoved() {
+  mouseXPos = mouseX;
+}
+void mousePressed() {
+  interacoes();
 }
