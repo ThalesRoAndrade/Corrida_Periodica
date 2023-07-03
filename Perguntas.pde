@@ -4,29 +4,31 @@ int rectWidth = 850;     // Largura dos retângulos
 int rectHeight = 50;    // Altura dos retângulos
 int spacing = 35;      // Espaço entre os retângulos
 
+void quadrados() {
+  for (int i = 0; i < 4; i++) {
+    int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
+
+    // Verifica se o mouse está sobre o retângulo
+    if (mouseXPos >= posX && mouseXPos <= rectWidth + posX &&
+      mouseY >= yPos && mouseY <= yPos + rectHeight) {
+      fill(150);  // Muda a cor do retângulo quando o mouse está sobre ele
+    } else {
+      fill(255); // Cor padrão do retângulo
+    }
+    //desenha os retângulos
+    rect(posX, yPos, rectWidth, rectHeight);
+  }
+}
+
 // Pergunta 1
 void PrimeiraPergunta() {
   background(255, 0, 0);
-
   //faz os retângulos
   if (tela==1) {
-    for (int i = 0; i < 4; i++) {
-      int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
-
-      // Verifica se o mouse está sobre o retângulo
-      if (mouseXPos >= posX && mouseXPos <= rectWidth + posX &&
-        mouseY >= yPos && mouseY <= yPos + rectHeight) {
-        fill(150);  // Muda a cor do retângulo quando o mouse está sobre ele
-      } else {
-        fill(255); // Cor padrão do retângulo
-      }
-      //desenha os retângulos
-      rect(posX, yPos, rectWidth, rectHeight);
-    }
+    quadrados();
     //textos dentro dos retângulos
-    fill(255); //cor
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto
+    textSize(30); //Tamanho do texto
     fill(0); //cor pergunta
     text("Qual é o elemento químico com o símbolo 'Na'\nna tabela periódica?", 50, height/2 - 200); //Pergunta
     fill(60, 50, 255); //cor
@@ -40,25 +42,12 @@ void PrimeiraPergunta() {
 // Pergunta 2
 void SegundaPergunta() {
   background(0, 255, 0);
-
   //faz os retângulos
   if (tela==2) {
-    for (int i = 0; i < 4; i++) {
-      int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
-
-      // Verifica se o mouse está sobre o retângulo
-      if (mouseXPos >= posX && mouseXPos <= rectWidth + posX &&
-        mouseY >= yPos && mouseY <= yPos + rectHeight) {
-        fill(150);  // Muda a cor do retângulo quando o mouse está sobre ele
-      } else {
-        fill(255);         // Cor padrão do retângulo
-      }
-      //desenha os retângulos
-      rect(posX, yPos, rectWidth, rectHeight);
-    }
+    quadrados();
     //textos dentro dos retângulos
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto
+    textSize(30); //Tamanho do texto
     fill(0); //cor pergunta
     text("Qual é o elemento químico com o símbolo 'Ag'\nna tabela periódica?", 50, height/2 - 200); //Pergunta
     fill(60, 50, 255); //cor
@@ -72,25 +61,12 @@ void SegundaPergunta() {
 // Pergunta 3
 void TerceiraPergunta() {
   background(0, 0, 255);
-
   //faz os retângulos
   if (tela==3) {
-    for (int i = 0; i < 4; i++) {
-      int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
-
-      // Verifica se o mouse está sobre o retângulo
-      if (mouseXPos >= posX && mouseXPos <= rectWidth + posX &&
-        mouseY >= yPos && mouseY <= yPos + rectHeight) {
-        fill(150);  // Muda a cor do retângulo quando o mouse está sobre ele
-      } else {
-        fill(255);         // Cor padrão do retângulo
-      }
-      //desenha os retângulos
-      rect(posX, yPos, rectWidth, rectHeight);
-    }
+    quadrados();
     //textos dentro dos retângulos
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto
+    textSize(30); //Tamanho do texto
     fill(0); //cor pergunta
     text("Qual elemento da tabela periódica tem o número\natômico 20?", 50, height/2 - 200); //Pergunta
     fill(60, 50, 255); //cor
@@ -104,25 +80,12 @@ void TerceiraPergunta() {
 // Pergunta 4
 void QuartaPergunta() {
   background(255, 255, 0);
-
   //faz os retângulos
   if (tela==4) {
-    for (int i = 0; i < 4; i++) {
-      int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
-
-      // Verifica se o mouse está sobre o retângulo
-      if (mouseXPos >= posX && mouseXPos <= rectWidth + posX &&
-        mouseY >= yPos && mouseY <= yPos + rectHeight) {
-        fill(150);  // Muda a cor do retângulo quando o mouse está sobre ele
-      } else {
-        fill(255);         // Cor padrão do retângulo
-      }
-      //desenha os retângulos
-      rect(posX, yPos, rectWidth, rectHeight);
-    }
+    quadrados();
     //textos dentro dos retângulos
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto
+    textSize(30); //Tamanho do texto
     fill(0); //cor pergunta
     text("Qual é o elemento químico que foi descoberto\npor Marie Curie e Pierre Curie?", 50, height/2 - 200); //Pergunta
     fill(60, 50, 255); //cor
@@ -136,25 +99,12 @@ void QuartaPergunta() {
 // Pergunta 5
 void QuintaPergunta() {
   background(0, 255, 255);
-
   //faz os retângulos
   if (tela==5) {
-    for (int i = 0; i < 4; i++) {
-      int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
-
-      // Verifica se o mouse está sobre o retângulo
-      if (mouseXPos >= posX && mouseXPos <= rectWidth + posX &&
-        mouseY >= yPos && mouseY <= yPos + rectHeight) {
-        fill(150);  // Muda a cor do retângulo quando o mouse está sobre ele
-      } else {
-        fill(255);         // Cor padrão do retângulo
-      }
-      //desenha os retângulos
-      rect(posX, yPos, rectWidth, rectHeight);
-    }
+    quadrados();
     //textos dentro dos retângulos
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto
+    textSize(30); //Tamanho do texto
     fill(0); //cor pergunta
     text("Qual elemento da tabela periódica é um gás nobre?", 50, height/2 - 200); //Pergunta
     fill(60, 50, 255); //cor
@@ -168,25 +118,12 @@ void QuintaPergunta() {
 
 void SextaPergunta() {
   background(255, 0, 255);
-
   //faz os retângulos
   if (tela==6) {
-    for (int i = 0; i < 4; i++) {
-      int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
-
-      // Verifica se o mouse está sobre o retângulo
-      if (mouseXPos >= posX && mouseXPos <= rectWidth + posX &&
-        mouseY >= yPos && mouseY <= yPos + rectHeight) {
-        fill(150);  // Muda a cor do retângulo quando o mouse está sobre ele
-      } else {
-        fill(255);         // Cor padrão do retângulo
-      }
-      //desenha os retângulos
-      rect(posX, yPos, rectWidth, rectHeight);
-    }
+    quadrados();
     //textos dentro dos retângulos
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto
+    textSize(30); //Tamanho do texto
     fill(0); //cor pergunta
     text("Quantos grupos de elementos possui a tabela \nperiódica?", 50, height/2 - 200); //Pergunta
     fill(60, 50, 255); //cor
@@ -200,25 +137,12 @@ void SextaPergunta() {
 
 void SetimaPergunta() {
   background(255, 165, 0);
-
   //faz os retângulos
   if (tela==7) {
-    for (int i = 0; i < 4; i++) {
-      int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
-
-      // Verifica se o mouse está sobre o retângulo
-      if (mouseXPos >= posX && mouseXPos <= rectWidth + posX &&
-        mouseY >= yPos && mouseY <= yPos + rectHeight) {
-        fill(150);  // Muda a cor do retângulo quando o mouse está sobre ele
-      } else {
-        fill(255);         // Cor padrão do retângulo
-      }
-      //desenha os retângulos
-      rect(posX, yPos, rectWidth, rectHeight);
-    }
+    quadrados();
     //textos dentro dos retângulos
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto
+    textSize(30); //Tamanho do texto
     fill(0); //cor pergunta
     text("Qual é o elemento químico com o símbolo 'Hg'\nna tabela periódica?", 50, height/2 - 200); //Pergunta
     fill(60, 50, 255); //cor
@@ -232,58 +156,32 @@ void SetimaPergunta() {
 
 void OitavaPergunta() {
   background(128, 0, 128);
-
   //faz os retângulos
   if (tela==8) {
-    for (int i = 0; i < 4; i++) {
-      int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
-
-      // Verifica se o mouse está sobre o retângulo
-      if (mouseXPos >= posX && mouseXPos <= rectWidth + posX &&
-        mouseY >= yPos && mouseY <= yPos + rectHeight) {
-        fill(150);  // Muda a cor do retângulo quando o mouse está sobre ele
-      } else {
-        fill(255);         // Cor padrão do retângulo
-      }
-      //desenha os retângulos
-      rect(posX, yPos, rectWidth, rectHeight);
-    }
+    quadrados();
     //textos dentro dos retângulos
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto
+    textSize(30); //Tamanho do texto
     fill(0); //cor pergunta
-    text("Com relação à classificação periódica moderna\n dos elementos, qual dessas alternativa é verdadeira", 50, height/2 - 200); //Pergunta
+    text("Com relação à classificação periódica moderna\ndos elementos, qual dessas alternativa é verdadeira", 50, height/2 - 200); //Pergunta
     fill(60, 50, 255); //cor
     textSize(20); //Tamanho do texto
-    text("Os elementos químicos são colocados em ordem decrescente de massas atômicas.", 60, height/2-25); //Item A
-    text("Em uma família, os elementos apresentam propriedades químicas bem distintas.", 60, height/2+60); //Item B
-    text("Em uma família, os elementos apresentam o mesmo número de elétrons na última camada.", 60, height/2+145); //Item C
-    text("Em um período, os elementos apresentam propriedades químicas semelhantes.", 60, height/2+230); //Item D
+    text("Os elementos químicos são colocados em ordem decrescente de massas atômicas", 60, height/2-25); //Item A
+    text("Na família, os elementos apresentam propriedades químicas bem distintas", 60, height/2+60); //Item B
+    text("Na família, os elementos apresentam o mesmo número de elétrons na última camada", 60, height/2+145); //Item C
+    text("Em um período, os elementos apresentam propriedades químicas semelhantes", 60, height/2+230); //Item D
   }
 }
 
 
 void NonaPergunta() {
   background(128, 128, 128);
-
   //faz os retângulos
   if (tela==9) {
-    for (int i = 0; i < 4; i++) {
-      int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
-
-      // Verifica se o mouse está sobre o retângulo
-      if (mouseXPos >= posX && mouseXPos <= rectWidth + posX &&
-        mouseY >= yPos && mouseY <= yPos + rectHeight) {
-        fill(150);  // Muda a cor do retângulo quando o mouse está sobre ele
-      } else {
-        fill(255);         // Cor padrão do retângulo
-      }
-      //desenha os retângulos
-      rect(posX, yPos, rectWidth, rectHeight);
-    }
+    quadrados();
     //textos dentro dos retângulos
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto
+    textSize(30); //Tamanho do texto
     fill(0); //cor pergunta
     text("Qual é o metal mais maleável e dúctil conhecido,\nutilizado em joias e circuitos eletrônicos?", 50, height/2 - 200); //Pergunta
     fill(60, 50, 255); //cor
@@ -297,26 +195,12 @@ void NonaPergunta() {
 
 void DecimaPergunta() {
   background(255, 192, 203);
-  //variaveis dos retângulos
-
   //faz os retângulos
   if (tela==10) {
-    for (int i = 0; i < 4; i++) {
-      int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
-
-      // Verifica se o mouse está sobre o retângulo
-      if (mouseXPos >= posX && mouseXPos <= rectWidth + posX &&
-        mouseY >= yPos && mouseY <= yPos + rectHeight) {
-        fill(150);  // Muda a cor do retângulo quando o mouse está sobre ele
-      } else {
-        fill(255);         // Cor padrão do retângulo
-      }
-      //desenha os retângulos
-      rect(posX, yPos, rectWidth, rectHeight);
-    }
+    quadrados();
     //textos dentro dos retângulos
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto
+    textSize(30); //Tamanho do texto
     fill(0); //cor pergunta
     text("Qual destes elementos não está na tabela periódica?", 50, height/2 - 200); //Pergunta
     fill(60, 50, 255); //cor
