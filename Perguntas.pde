@@ -1,9 +1,3 @@
-int posY = 220;    // Poisção y inicial dos retângulos
-int posX = 50;      // Posição x inicial dos retângulos
-int rectWidth = 850;     // Largura dos retângulos
-int rectHeight = 50;    // Altura dos retângulos
-int spacing = 35;      // Espaço entre os retângulos
-
 void quadrados() {
   for (int i = 0; i < 4; i++) {
     int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
