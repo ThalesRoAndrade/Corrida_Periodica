@@ -1,10 +1,3 @@
-void mouseMoved() {
-  mouseXPos = mouseX;
-}
-void mousePressed() {
-  interacoes();
-}
-
 void interacoes() {
   //Perguta 1
   // Verifica se o clique foi na área do retângulo 1
@@ -280,12 +273,26 @@ void interacoes() {
     break;
   case 30:
     if (mouseX >= 750 && mouseX <= 1000 && mouseY >= 480 && mouseY <= 540) {
-      tela = 0;  // Decima Pergunta
+      tela = 50;  // Decima Pergunta
     }
     break;
   case 20:
     if (mouseX >= 750 && mouseX <= 1000 && mouseY >= 480 && mouseY <= 540) {
+      tela = 50;  // Decima Pergunta
+    }
+    break;
+    
+  case 50:
+    if (mouseX >= 750 && mouseX <= 1000 && mouseY >= 480 && mouseY <= 540) {
       tela = 0;  // Decima Pergunta
+      resposta = 0;
+    }
+    break;
+    
+    case 51:
+    if (mouseX >= 750 && mouseX <= 1000 && mouseY >= 480 && mouseY <= 540) {
+      tela = 0;  // Decima Pergunta
+      resposta = 0;
     }
     break;
   default:
