@@ -1,8 +1,16 @@
-int tela = 0;
-int mouseXPos;
-int resposta = 0;
-int rectSmallWidht = 300;     // Largura dos retângulos
-int rectSmallHeight = 60;    // Altura dos retângulos
+// Variaveis Globais
+
+int tela = 0;    //Número de telas
+int mouseXPos;    //Posição do mouse X
+int resposta = 0;    //Número de acertos
+int rectSmallWidht = 300;     // Largura dos retângulos menores
+int rectSmallHeight = 60;    // Altura dos retângulos menores
+int posY = 220;    // Poisção y inicial dos retângulos
+int posX = 50;      // Posição x inicial dos retângulos
+int rectWidth = 850;     // Largura dos retângulos
+int rectHeight = 50;    // Altura dos retângulos
+int spacing = 35;      // Espaço entre os retângulos
+
 
 void menuTelas() {
   int posY = height- 150;   //Posição y
