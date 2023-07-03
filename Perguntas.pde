@@ -24,13 +24,16 @@ void PrimeiraPergunta() {
       rect(posX, yPos, rectWidth, rectHeight);
     }
     //textos dentro dos retângulos
-    fill(60, 50, 255); //cor
+    fill(255); //cor
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto  
-    text("Item Afffffffff", 60, height/2-15); //Item A 
-    text("Item B", 60, height/2+70); //Item B
-    text("Item C", 60, height/2+155); //Item C
-    text("Item D", 60, height/2+240); //Item D
+    textSize(40); //Tamanho do texto
+    fill(0); //cor pergunta
+    text("Qual é o elemento químico com o símbolo 'Na'\nna tabela periódica?", 50, height/2 - 200); //Pergunta
+    fill(60, 50, 255); //cor
+    text("Sódio", 60, height/2-15); //Item A
+    text("Níquel", 60, height/2+70); //Item B
+    text("Neônio", 60, height/2+155); //Item C
+    text("Nitrogênio", 60, height/2+240); //Item D
   }
 }
 
@@ -54,13 +57,15 @@ void SegundaPergunta() {
       rect(posX, yPos, rectWidth, rectHeight);
     }
     //textos dentro dos retângulos
-    fill(60, 50, 255); //cor
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto  
-    text("Item A", 60, height/2-15); //Item A 
-    text("Item Bercta", 60, height/2+70); //Item B
-    text("Item C", 60, height/2+155); //Item C
-    text("Item D", 60, height/2+240); //Item D
+    textSize(40); //Tamanho do texto
+    fill(0); //cor pergunta
+    text("Qual é o elemento químico com o símbolo 'Ag'\nna tabela periódica?", 50, height/2 - 200); //Pergunta
+    fill(60, 50, 255); //cor
+    text("Argônio", 60, height/2-15); //Item A
+    text("Prata", 60, height/2+70); //Item B
+    text("Ouro", 60, height/2+155); //Item C
+    text("Alumínio", 60, height/2+240); //Item D
   }
 }
 
@@ -84,13 +89,15 @@ void TerceiraPergunta() {
       rect(posX, yPos, rectWidth, rectHeight);
     }
     //textos dentro dos retângulos
-    fill(60, 50, 255); //cor
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto  
-    text("Item A", 60, height/2-15); //Item A 
-    text("Item B", 60, height/2+70); //Item B
-    text("Item Certa", 60, height/2+155); //Item C
-    text("Item D", 60, height/2+240); //Item D
+    textSize(40); //Tamanho do texto
+    fill(0); //cor pergunta
+    text("Qual elemento da tabela periódica tem o número\natômico 20?", 50, height/2 - 200); //Pergunta
+    fill(60, 50, 255); //cor
+    text("Cálcio", 60, height/2-15); //Item A
+    text("Sódio", 60, height/2+70); //Item B
+    text("Potássio", 60, height/2+155); //Item C
+    text("Magnésio", 60, height/2+240); //Item D
   }
 }
 
@@ -114,13 +121,15 @@ void QuartaPergunta() {
       rect(posX, yPos, rectWidth, rectHeight);
     }
     //textos dentro dos retângulos
-    fill(60, 50, 255); //cor
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto  
-    text("Item A", 60, height/2-15); //Item A 
-    text("Item Bhfjfhjfh", 60, height/2+70); //Item B
-    text("Item C", 60, height/2+155); //Item C
-    text("Item D", 60, height/2+240); //Item D
+    textSize(40); //Tamanho do texto
+    fill(0); //cor pergunta
+    text("Qual é o elemento químico que foi descoberto\npor Marie Curie e Pierre Curie?", 50, height/2 - 200); //Pergunta
+    fill(60, 50, 255); //cor
+    text("Cúrio", 60, height/2-15); //Item A
+    text("Polônio", 60, height/2+70); //Item B
+    text("Urânio", 60, height/2+155); //Item C
+    text("Rádio", 60, height/2+240); //Item D
   }
 }
 
@@ -144,13 +153,15 @@ void QuintaPergunta() {
       rect(posX, yPos, rectWidth, rectHeight);
     }
     //textos dentro dos retângulos
-    fill(60, 50, 255); //cor
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto  
-    text("Item A", 60, height/2-15); //Item A 
-    text("Item B", 60, height/2+70); //Item B
-    text("Item C", 60, height/2+155); //Item C
-    text("Item Ddfdfdggf", 60, height/2+240); //Item D
+    textSize(40); //Tamanho do texto
+    fill(0); //cor pergunta
+    text("Qual elemento da tabela periódica é um gás nobre?", 50, height/2 - 200); //Pergunta
+    fill(60, 50, 255); //cor
+    text("Oxigênio", 60, height/2-15); //Item A
+    text("Hélio", 60, height/2+70); //Item B
+    text("Zinco", 60, height/2+155); //Item C
+    text("Nitrogênio", 60, height/2+240); //Item D
   }
 }
 
@@ -174,13 +185,15 @@ void SextaPergunta() {
       rect(posX, yPos, rectWidth, rectHeight);
     }
     //textos dentro dos retângulos
-    fill(60, 50, 255); //cor
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto  
-    text("Item Aghghghgh", 60, height/2-15); //Item A 
-    text("Item B", 60, height/2+70); //Item B
-    text("Item C", 60, height/2+155); //Item C
-    text("Item D", 60, height/2+240); //Item D
+    textSize(40); //Tamanho do texto
+    fill(0); //cor pergunta
+    text("Quantos grupos de elementos possui a tabela \nperiódica?", 50, height/2 - 200); //Pergunta
+    fill(60, 50, 255); //cor
+    text("18", 60, height/2-15); //Item A
+    text("20", 60, height/2+70); //Item B
+    text("16", 60, height/2+155); //Item C
+    text("14", 60, height/2+240); //Item D
   }
 }
 
@@ -204,13 +217,15 @@ void SetimaPergunta() {
       rect(posX, yPos, rectWidth, rectHeight);
     }
     //textos dentro dos retângulos
-    fill(60, 50, 255); //cor
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto  
-    text("Item A", 60, height/2-15); //Item A 
-    text("Item B", 60, height/2+70); //Item B
-    text("Item Cgfgfgfgf", 60, height/2+155); //Item C
-    text("Item D", 60, height/2+240); //Item D
+    textSize(40); //Tamanho do texto
+    fill(0); //cor pergunta
+    text("Qual é o elemento químico com o símbolo 'Hg'\nna tabela periódica?", 50, height/2 - 200); //Pergunta
+    fill(60, 50, 255); //cor
+    text("Hidrogênio", 60, height/2-15); //Item A
+    text("Prata", 60, height/2+70); //Item B
+    text("Hélio", 60, height/2+155); //Item C
+    text("Mercúrio", 60, height/2+240); //Item D
   }
 }
 
@@ -234,13 +249,16 @@ void OitavaPergunta() {
       rect(posX, yPos, rectWidth, rectHeight);
     }
     //textos dentro dos retângulos
-    fill(60, 50, 255); //cor
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto  
-    text("Item A", 60, height/2-15); //Item A 
-    text("Item B", 60, height/2+70); //Item B
-    text("Item C", 60, height/2+155); //Item C
-    text("Item Drrttghgf", 60, height/2+240); //Item D
+    textSize(40); //Tamanho do texto
+    fill(0); //cor pergunta
+    text("Com relação à classificação periódica moderna\n dos elementos, qual dessas alternativa é verdadeira", 50, height/2 - 200); //Pergunta
+    fill(60, 50, 255); //cor
+    textSize(20); //Tamanho do texto
+    text("Os elementos químicos são colocados em ordem decrescente de massas atômicas.", 60, height/2-25); //Item A
+    text("Em uma família, os elementos apresentam propriedades químicas bem distintas.", 60, height/2+60); //Item B
+    text("Em uma família, os elementos apresentam o mesmo número de elétrons na última camada.", 60, height/2+145); //Item C
+    text("Em um período, os elementos apresentam propriedades químicas semelhantes.", 60, height/2+230); //Item D
   }
 }
 
@@ -264,13 +282,15 @@ void NonaPergunta() {
       rect(posX, yPos, rectWidth, rectHeight);
     }
     //textos dentro dos retângulos
-    fill(60, 50, 255); //cor
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto  
-    text("Item Ayhghg", 60, height/2-15); //Item A 
-    text("Item B", 60, height/2+70); //Item B
-    text("Item C", 60, height/2+155); //Item C
-    text("Item D", 60, height/2+240); //Item D
+    textSize(40); //Tamanho do texto
+    fill(0); //cor pergunta
+    text("Qual é o metal mais maleável e dúctil conhecido,\nutilizado em joias e circuitos eletrônicos?", 50, height/2 - 200); //Pergunta
+    fill(60, 50, 255); //cor
+    text("Ouro", 60, height/2-15); //Item A
+    text("Prata", 60, height/2+70); //Item B
+    text("Platina", 60, height/2+155); //Item C
+    text("Cobre", 60, height/2+240); //Item D
   }
 }
 
@@ -295,12 +315,14 @@ void DecimaPergunta() {
       rect(posX, yPos, rectWidth, rectHeight);
     }
     //textos dentro dos retângulos
-    fill(60, 50, 255); //cor
     textAlign(LEFT); //Alinhado a esquerda
-    textSize(40); //Tamanho do texto  
-    text("Item A", 60, height/2-15); //Item A 
-    text("Item B", 60, height/2+70); //Item B
-    text("Item Cgfgfgfgf", 60, height/2+155); //Item C
-    text("Item D", 60, height/2+240); //Item D
+    textSize(40); //Tamanho do texto
+    fill(0); //cor pergunta
+    text("Qual destes elementos não está na tabela periódica?", 50, height/2 - 200); //Pergunta
+    fill(60, 50, 255); //cor
+    text("Carbono", 60, height/2-15); //Item A
+    text("Bronze", 60, height/2+70); //Item B
+    text("Oxigênio", 60, height/2+155); //Item C
+    text("Iodo", 60, height/2+240); //Item D
   }
 }
