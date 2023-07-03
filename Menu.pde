@@ -1,25 +1,44 @@
+int tela = 0;
+int mouseXPos;
+int resposta = 0;
+int rectSmallWidht = 300;     // Largura dos retângulos
+int rectSmallHeight = 60;    // Altura dos retângulos
+
+void menuTelas() {
+  int posY = height- 150;   //Posição y
+  int posX = width-250;   //Posição x
+
+  for (int i = 0; i < 1; i++) {
+    int yPos = i * (rectSmallHeight + spacing) + rectSmallHeight / 2 + posY;
+    // Verifica se o mouse está sobre o retângulo
+    if (mouseXPos >= posX && mouseXPos <= rectSmallWidht + mouseX &&
+      mouseY >= yPos && mouseY <= yPos + rectSmallHeight) {
+      fill(200);  // Muda a cor do retângulo quando o mouse está sobre ele
+    } else {
+      fill(100);         // Cor padrão do retângulo
+    }
+    rect(posX, yPos, rectSmallWidht, rectSmallHeight);
+  }
+}
+
 void menu() {
   //variaveis dos retângulos
   int posY = 250;    // Poisção y inicial dos retângulos
   int posX = 350;    // Poisção x inicial dos retângulos
-  int rectWidth = 300;    // Largura dos retângulos
-  int rectHeight = 60;    // Largura dos retângulos
-  int spacing = 35;    //Espaço entre os retângulos
 
   //faz os retângulos
   for (int i = 0; i < 2; i++) {
-    int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
+    int yPos = i * (rectSmallHeight + spacing) + rectSmallHeight / 2 + posY;
 
     // Verifica se o mouse está sobre o retângulo
-    if (mouseXPos >= posX && mouseXPos <= posX + rectWidth &&
-      mouseY >= yPos && mouseY <= yPos + rectHeight) {
+    if (mouseXPos >= posX && mouseXPos <= posX + rectSmallWidht &&
+      mouseY >= yPos && mouseY <= yPos + rectSmallHeight) {
       fill(200);  // Muda a cor do retângulo quando o mouse está sobre ele
     } else {
       fill(100);  // Cor padrão do retângulo
     }
-    rect(posX, yPos, rectWidth, rectHeight);
+    rect(posX, yPos, rectSmallWidht, rectSmallHeight);
   }
-
   //texto do menu
   fill(255);
   textSize(40);
@@ -35,10 +54,56 @@ void menu() {
   //Informações do jogo
   if (mousePressed == true) {
     if (mouseX>=350 && mouseX<=650 && mouseY>=360 && mouseY<=440) {
-      tela=2;
+      tela=51;
     }
   }
 }
+
+void telaFinal() {
+
+  if (tela ==50) {
+    menuTelas();
+
+    //texto da Tela final
+    fill(255);
+    textSize(40);
+    text("Acertou:", 480, height/2+80);
+    text(resposta, 580, height/2+80);
+
+    //texto do menu
+    fill(255);
+    textSize(40);
+    text("Reiniciar", width-120, height - 75);
+
+    if (resposta >= 7) {
+      textSize(100);
+      fill(255);
+      text("Parabéns", width/2, 200);
+    }
+
+    if (resposta < 7) {
+      textSize(100);
+      fill(255);
+      text("Estude", width/2, 200);
+    }
+  }
+}
+
+void telaInformacoes() {
+  if (tela == 51) {
+    menuTelas();
+    //texto da Tela final
+    fill(255);
+    textSize(40);
+    text("Não sei:", 480, height/2+80);
+
+    //texto do menu
+    fill(255);
+    textSize(40);
+    text("Reiniciar", width-120, height - 75);
+  }
+}
+
 
 void telas() {
   switch (tela) {
@@ -150,6 +215,17 @@ void telas() {
     break;
   case 30:
     errou10();
+    break;
+
+    //Tela final
+  case 50:
+    telaFinal();
+    break;
+
+
+    //Tela de informações
+  case 51:
+    telaInformacoes();
     break;
   default:
     break;
