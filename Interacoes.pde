@@ -12,6 +12,7 @@ void interacoes() {
   case 1:
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 245 && mouseY <= 290) {
       tela = 11;  // Resposta certa Item A
+      resposta += 1;
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 325 && mouseY <= 375) {
       tela = 21;  // Resposta errada Item B
@@ -43,6 +44,7 @@ void interacoes() {
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 325 && mouseY <= 375) {
       tela = 12;  // Resposta certa Item B
+      resposta += 1;
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 410 && mouseY <= 460) {
       tela = 22;  // Resposta errada Item C
@@ -67,13 +69,14 @@ void interacoes() {
     // Pergunta 3
   case 3:
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 245 && mouseY <= 290) {
-      tela = 23;  // Resposta errada Item A
+      tela = 13;  // Resposta certa Item A
+      resposta += 1;
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 325 && mouseY <= 375) {
       tela = 23;  // Resposta errada Item B
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 410 && mouseY <= 460) {
-      tela = 13;  // Resposta certa Item C
+      tela = 23;  // Resposta errada Item C
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 495 && mouseY <= 545) {
       tela = 23;  // Resposta errada Item D
@@ -97,13 +100,14 @@ void interacoes() {
       tela = 24;  // Resposta errada Item A
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 325 && mouseY <= 375) {
-      tela = 14;  // Resposta certa Item B
+      tela = 24;  // Resposta errada Item B
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 410 && mouseY <= 460) {
       tela = 24;  // Resposta errada Item C
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 495 && mouseY <= 545) {
-      tela = 24;  // Resposta errada Item D
+      tela = 14;  // Resposta certa Item D
+      resposta += 1;
     }
     break;
   case 24:
@@ -124,13 +128,14 @@ void interacoes() {
       tela = 25;  // Resposta errada Item A
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 325 && mouseY <= 375) {
-      tela = 25;  // Resposta errada Item B
+      tela = 15;  // Resposta certa Item B
+      resposta += 1;
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 410 && mouseY <= 460) {
       tela = 25;  // Resposta errada Item C
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 495 && mouseY <= 545) {
-      tela = 15;  // Resposta certa Item D
+      tela = 25;  // Resposta errada Item D
     }
     break;
   case 25:
@@ -149,6 +154,7 @@ void interacoes() {
   case 6:
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 245 && mouseY <= 290) {
       tela = 16;  // Resposta certa Item A
+      resposta += 1;
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 325 && mouseY <= 375) {
       tela = 26;  // Resposta errada Item B
@@ -181,10 +187,11 @@ void interacoes() {
       tela = 27;  // Resposta errada Item B
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 410 && mouseY <= 460) {
-      tela = 17;  // Resposta certa Item C
+      tela = 27;  // Resposta errada Item C
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 495 && mouseY <= 545) {
-      tela = 27;  // Resposta errada Item D
+      tela = 17;  // Resposta certa Item D
+      resposta += 1;
     }
     break;
   case 27:
@@ -208,10 +215,11 @@ void interacoes() {
       tela = 28;  // Resposta errada Item B
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 410 && mouseY <= 460) {
-      tela = 28;  // Resposta errada Item C
+      tela = 18;  // Resposta certa Item C
+      resposta += 1;
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 495 && mouseY <= 545) {
-      tela = 18;  // Resposta certa Item D
+      tela = 28;  // Resposta errada Item D
     }
     break;
   case 28:
@@ -230,6 +238,7 @@ void interacoes() {
   case 9:
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 245 && mouseY <= 290) {
       tela = 19;  // Resposta certa Item A
+      resposta += 1;
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 325 && mouseY <= 375) {
       tela = 29;  // Resposta errada Item B
@@ -243,7 +252,7 @@ void interacoes() {
     break;
   case 29:
     if (mouseX >= 750 && mouseX <= 1000 && mouseY >= 480 && mouseY <= 540) {
-      tela = 9;  // Decima Pergunta
+      tela = 10;  // Decima Pergunta
     }
     break;
   case 19:
@@ -259,10 +268,11 @@ void interacoes() {
       tela = 30;  // Resposta errada Item A
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 325 && mouseY <= 375) {
-      tela = 30;  // Resposta errada Item B
+      tela = 20;  // Resposta certa Item B
+      resposta += 1;
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 410 && mouseY <= 460) {
-      tela = 20;  // Resposta certa Item C
+      tela = 30;  // Resposta errada Item C
     }
     if (mouseX >= 50 && mouseX <= 900 && mouseY >= 495 && mouseY <= 545) {
       tela = 30;  // Resposta errada Item D
