@@ -6,10 +6,15 @@ int resposta = 0;    //Número de acertos
 int rectSmallWidht = 300;     // Largura dos retângulos menores
 int rectSmallHeight = 60;    // Altura dos retângulos menores
 int posY = 220;    // Poisção y inicial dos retângulos
-int posX = 50;      // Posição x inicial dos retângulos
-int rectWidth = 850;     // Largura dos retângulos
+int posX = 150;      // Posição x inicial dos retângulos
+int rectWidth = 700;     // Largura dos retângulos
 int rectHeight = 50;    // Altura dos retângulos
 int spacing = 35;      // Espaço entre os retângulos
+PImage TelaZero;    //Imagens
+PImage TelaCerta;    //Imagens
+PImage TelaErrada;    //Imagens
+PImage TelaPergunta;    //Imagens
+
 
 
 void menuTelas() {
@@ -21,9 +26,9 @@ void menuTelas() {
     // Verifica se o mouse está sobre o retângulo
     if (mouseXPos >= posX && mouseXPos <= rectSmallWidht + mouseX &&
       mouseY >= yPos && mouseY <= yPos + rectSmallHeight) {
-      fill(200);  // Muda a cor do retângulo quando o mouse está sobre ele
+      fill(190,119,117);  // Muda a cor do retângulo quando o mouse está sobre ele
     } else {
-      fill(100);         // Cor padrão do retângulo
+      fill(237,119,117);        // Cor padrão do retângulo
     }
     rect(posX, yPos, rectSmallWidht, rectSmallHeight);
   }
@@ -41,9 +46,9 @@ void menu() {
     // Verifica se o mouse está sobre o retângulo
     if (mouseXPos >= posX && mouseXPos <= posX + rectSmallWidht &&
       mouseY >= yPos && mouseY <= yPos + rectSmallHeight) {
-      fill(200);  // Muda a cor do retângulo quando o mouse está sobre ele
+      fill(190,119,117);  // Muda a cor do retângulo quando o mouse está sobre ele
     } else {
-      fill(100);  // Cor padrão do retângulo
+      fill(237,119,117);  // Cor padrão do retângulo
     }
     rect(posX, yPos, rectSmallWidht, rectSmallHeight);
   }
