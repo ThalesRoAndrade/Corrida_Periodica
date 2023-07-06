@@ -3,25 +3,24 @@ void telasRespostasErradas() {
   //variaveis dos retângulos
   int posY = height- 150;
   int posX = width-250;   // Altura dos retângulos
+  
+  image(TelaErrada, 0, 0);
 
-  textAlign(CENTER);
-  textSize(100);
-  fill(255);
-  text("Errooouuuuuu", width/2, 200);
 
   for (int i = 0; i < 1; i++) {
     int yPos = i * (rectSmallHeight + spacing) + rectSmallHeight / 2 + posY;
     // Verifica se o mouse está sobre o retângulo
     if (mouseXPos >= posX && mouseXPos <= rectSmallWidht + mouseX &&
       mouseY >= yPos && mouseY <= yPos + rectSmallHeight) {
-      fill(200);  // Muda a cor do retângulo quando o mouse está sobre ele
+      fill(190, 119, 117);  // Muda a cor do retângulo quando o mouse está sobre ele
     } else {
-      fill(100);         // Cor padrão do retângulo
+      fill(237, 119, 117);         // Cor padrão do retângulo
     }
     rect(posX, yPos, rectSmallWidht, rectSmallHeight);
   }
   //texto do menu
   fill(255);
+  textAlign(CENTER);
   textSize(40);
   text("Próxima", width-120, height - 75);
 }
