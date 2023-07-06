@@ -2,24 +2,24 @@ void telaRespostaCerta() {
   int posY = height- 150;    // Poisção y inicial dos retângulos
   int posX = width-250;    // Posição x inicial dos retângulos
 
+  //Imagem de fundo
   background(60, 200, 60);
-  textAlign(CENTER);
-  textSize(100);
-  fill(255);
-  text("Certa Respota", width/2, 200);
+  image(TelaCerta, 0, 0);
 
+  //Faz o retângulo
   for (int i = 0; i < 1; i++) {
     int yPos = i * (rectSmallHeight + spacing) + rectSmallHeight / 2 + posY;
     // Verifica se o mouse está sobre o retângulo
     if (mouseXPos >= posX && mouseXPos <= rectSmallWidht + mouseX &&
       mouseY >= yPos && mouseY <= yPos + rectSmallHeight) {
-      fill(200);  // Muda a cor do retângulo quando o mouse está sobre ele
+      fill(190, 119, 117);  // Muda a cor do retângulo quando o mouse está sobre ele
     } else {
-      fill(100);         // Cor padrão do retângulo
+      fill(237, 119, 117);         // Cor padrão do retângulo
     }
     rect(posX, yPos, rectSmallWidht, rectSmallHeight);
   }
   //texto do menu
+  textAlign(CENTER);
   fill(255);
   textSize(40);
   text("Próxima", width-120, height - 75);
