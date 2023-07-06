@@ -1,4 +1,5 @@
 void quadrados() {
+  image(TelaPergunta, 0, 0);
   for (int i = 0; i < 4; i++) {
     int yPos = i * (rectHeight + spacing) + rectHeight / 2 + posY;
 
