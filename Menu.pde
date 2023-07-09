@@ -10,10 +10,15 @@ int posX = 150;      // Posição x inicial dos retângulos
 int rectWidth = 700;     // Largura dos retângulos
 int rectHeight = 50;    // Altura dos retângulos
 int spacing = 35;      // Espaço entre os retângulos
-PImage TelaZero;    //Imagens
-PImage TelaCerta;    //Imagens
-PImage TelaErrada;    //Imagens
-PImage TelaPergunta;    //Imagens
+
+//Imagens
+PImage TelaZero;    //Imagem da Tela Principal
+PImage TelaCerta;    //Imagem Tela de resposta certa
+PImage TelaErrada;    //Imagem Tela de resposta errada
+PImage TelaPergunta;    //Imagem Tela de Pergunta
+PImage TelaFinalBom;    //Imagem Tela de Final Bom
+PImage TelaFinalRuim;    //Imagem Tela de Final Ruim
+PImage TelaInformacoes;    //Imagem Tela de Informações
 
 
 
