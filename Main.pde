@@ -1,10 +1,6 @@
 void setup() {
   size(1000, 600);
   noStroke();
-  TelaZero = loadImage("Tela 0.png");
-  TelaCerta = loadImage("Tela certa.png");
-  TelaErrada = loadImage("Tela errada.png");
-  TelaPergunta = loadImage("Tela Principal.png");
 }
 
 void draw() {
